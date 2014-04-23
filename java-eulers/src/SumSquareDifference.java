@@ -15,4 +15,22 @@
  */
 public class SumSquareDifference {
 
+	public static void main(String[] args) {
+		SumSquareDifference sumSquareDifference = new SumSquareDifference();
+		System.out.println("The difference between the sum of squares of the first one hundred natural number and square of the sum is:"+sumSquareDifference.getDifference());
+		//25164150
+	}
+
+	private Object getDifference() {
+		int sumOfSquare = 0;
+		int squareOfSum = 0;
+		for(int i=1;i<=100;i++){
+			sumOfSquare+=i*i;
+			squareOfSum +=i;
+		}
+		return squareOfSum*squareOfSum-sumOfSquare;
+		
+	}
+	
+	
 }
